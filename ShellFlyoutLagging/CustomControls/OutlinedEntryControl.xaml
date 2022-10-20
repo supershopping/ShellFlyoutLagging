@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Grid xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             RowDefinitions="55"   
+             x:Name="this"
+             x:Class="ShellFlyoutLagging.CustomControls.OutlinedEntryControl">
+    <Border Grid.Row="0" Padding="2" StrokeShape="RoundRectangle 12" Stroke="Gray">
+        <Entry x:Name ="txtEntry" 
+               Margin="10,0,10,0"
+               FontSize="16"
+               VerticalOptions="CenterAndExpand"
+               ReturnType="Done"
+               Focused="txtEntry_Focused"
+               Unfocused="txtEntry_Unfocused"
+               Completed="txtEntry_Completed"
+               Text="{Binding Source={x:Reference this},Path=Text}"
+               IsEnabled="{Binding Source={x:Reference this},Path=IsEntryEnabled}"/>
+
+    </Border>
+    <Label Grid.Row="0"
+           FontSize="16"
+           x:Name="lblPlaceholder"
+           Margin="10,0,10,0"
+           TextColor="{StaticResource Gray300}"
+           
+           Text="{Binding Source={x:Reference this},Path=Placeholder}"
+           BackgroundColor="White"
+           HorizontalOptions="StartAndExpand"
+           VerticalOptions="CenterAndExpand"
+           />
+</Grid>

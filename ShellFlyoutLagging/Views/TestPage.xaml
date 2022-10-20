@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ShellFlyoutLagging.Views.TestPage"            
              xmlns:local="clr-namespace:ShellFlyoutLagging.ViewModels"
+             xmlns:customControls ="clr-namespace:ShellFlyoutLagging.CustomControls"    
              Title="TestPage">
 
     <ContentPage.BindingContext>
@@ -14,16 +15,16 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <Entry Text="{Binding EntryNumber1}"/>
-        <Entry Text="{Binding EntryNumber2}"/>
-        <Entry Text="{Binding EntryNumber3}"/>
-        <Entry Text="{Binding EntryNumber4}"/>
-        <Entry Text="{Binding EntryNumber5}"/>
-        <Entry Text="{Binding EntryNumber6}"/>
-        <Entry Text="{Binding EntryNumber7}"/>
-        <Entry Text="{Binding EntryNumber8}"/>
-        <Entry Text="{Binding EntryNumber9}"/>
-        <Entry Text="{Binding EntryNumber10}"/>
+        <customControls:OutlinedEntryControl Text="{Binding EntryNumber1}"/>
+        <customControls:OutlinedEntryControl Text="{Binding EntryNumber2}"/>
+        <customControls:OutlinedEntryControl Text="{Binding EntryNumber3}"/>
+        <customControls:OutlinedEntryControl Text="{Binding EntryNumber4}"/>
+        <customControls:OutlinedEntryControl Text="{Binding EntryNumber5}"/>
+        <customControls:OutlinedEntryControl Text="{Binding EntryNumber6}"/>
+        <customControls:OutlinedEntryControl Text="{Binding EntryNumber7}"/>
+        <customControls:OutlinedEntryControl Text="{Binding EntryNumber8}"/>
+        <customControls:OutlinedEntryControl Text="{Binding EntryNumber9}"/>
+        <customControls:OutlinedEntryControl Text="{Binding EntryNumber10}"/>
         
     </VerticalStackLayout>
 </ContentPage>
